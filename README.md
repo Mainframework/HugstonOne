@@ -1,6 +1,7 @@
 # HugstonOne 1.0.5 Enterprise Edition
 
-**The free AI in A Box for all**
+**The free AI in A Box for all** 
+Standalone with installer and portable for windows. 
 
 - [![](https://img.youtube.com/vi/zL2l60qpJk0/0.jpg)](https://youtu.be/zL2l60qpJk0?si=Ok_a5P6MMijxx5Hw)
 
@@ -74,6 +75,7 @@ Future goals:
 - 2 Connecting to Hugston Repository for curated models
 - 3 Adding chat between HugstonOne Users for real time talk
 - 4 Integrating better memory options like Memos Framework
+- 5 Build for Linux, MacOs, Mobile Platforms. 
 
 
 
