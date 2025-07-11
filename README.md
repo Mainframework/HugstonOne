@@ -45,6 +45,7 @@ First-time users need to request the activation code (including the unique key) 
 
 **Example Key:**
 `7935c0c12240124df62dcb14c6e90234986f2102417b25cf6cb8457697d0e629`
+
 <img width="1820" height="958" alt="Screenshot 2025-06-25 132746" src="https://github.com/user-attachments/assets/dea7454d-9cd8-4f72-bcac-57ec60027a2d" />
 
 🔗 **Download the App:** [Hugston Website](https://Hugston.com)
@@ -52,18 +53,26 @@ First-time users need to request the activation code (including the unique key) 
 **Enjoy!**
 
 Some examples: 
-<img width="1823" height="978" alt="Screenshot 2025-06-25 200537" src="https://github.com/user-attachments/assets/914fff1b-46f6-4d4f-8d3f-2099e0ac189c" />
-<img width="1823" height="977" alt="Screenshot 2025-06-25 215936" src="https://github.com/user-attachments/assets/9441834f-46c8-4505-9e4b-b2afb0cd2928" />
-<img width="1823" height="973" alt="Screenshot 2025-06-26 141843" src="https://github.com/user-attachments/assets/bece8d4f-2f97-457d-92be-d78e66d22273" />
-<img width="1823" height="974" alt="Screenshot 2025-06-26 190107" src="https://github.com/user-attachments/assets/d311bbb8-7498-4bd3-bb9a-490fb62da642" />
-<img width="1823" height="976" alt="Screenshot 2025-06-26 204003" src="https://github.com/user-attachments/assets/f9df8f74-b229-407a-847c-0b94aca2d83e" />
-<img width="1823" height="972" alt="Screenshot 2025-06-29 235430" src="https://github.com/user-attachments/assets/bd52cb36-fe66-4e4a-90d9-334af62bb1b4" />
-<img width="1823" height="976" alt="Screenshot 2025-06-30 234301" src="https://github.com/user-attachments/assets/f2243c42-5483-497d-92bf-17daf9c603b2" />
-<img width="1823" height="976" alt="Screenshot 2025-07-01 103235" src="https://github.com/user-attachments/assets/804d16f9-6788-4493-84c0-0d299cf1120b" />
-<img width="1823" height="978" alt="Screenshot 2025-07-04 160644" src="https://github.com/user-attachments/assets/9a928c88-6517-4ac9-bc8d-8700cdbfe300" />
-<img width="965" height="802" alt="Screenshot 2025-07-08 103217" src="https://github.com/user-attachments/assets/164bdd49-e961-4eb4-87a9-e3ab5c72fdfd" />
-<img width="1823" height="975" alt="Screenshot 2025-07-09 221951" src="https://github.com/user-attachments/assets/4c8d134e-09cc-49ce-8cc9-e140afc94596" />
-<img width="1823" height="978" alt="Screenshot 2025-07-10 200429" src="https://github.com/user-attachments/assets/f5b1cef7-4de3-4e0c-8c51-fc4b9637688d" />
+Of the 1.0.4 and 1.0.5
+
+<img width="1823" height="978" alt="Screenshot 2025-07-11 181652 png" src="https://github.com/user-attachments/assets/4a47c740-7a77-4c51-8529-987a3607ed78" />
+<img width="1656" height="972" alt="Screenshot 2025-07-11 181353 png" src="https://github.com/user-attachments/assets/c026d3a6-6782-4e2d-8684-34f992a512af" />
+<img width="1657" height="975" alt="Screenshot 2025-07-11 181324 png" src="https://github.com/user-attachments/assets/a442296a-4279-43f7-8458-53991b9f1558" />
+<img width="1655" height="975" alt="Screenshot 2025-07-11 181253 png" src="https://github.com/user-attachments/assets/03d14535-9342-49b4-baef-bd09f24fde55" />
+<img width="1081" height="745" alt="Screenshot 2025-07-09 222036 png" src="https://github.com/user-attachments/assets/1bd5aa0d-cade-4444-a356-47f4ada6606f" />
+<img width="1823" height="976" alt="Screenshot 2025-07-01 114036 png" src="https://github.com/user-attachments/assets/d0cd1c43-b331-4b9b-91b5-d929ca80d1fd" />
+<img width="1823" height="977" alt="Screenshot 2025-07-01 103250 png" src="https://github.com/user-attachments/assets/c31e2c37-49c6-4ada-963b-86ad4870299e" />
+<img width="1823" height="972" alt="Screenshot 2025-06-29 235430 png" src="https://github.com/user-attachments/assets/0639fb14-1f17-411a-b425-a9cd46a2924e" />
+<img width="1823" height="973" alt="Screenshot 2025-06-26 141843 png" src="https://github.com/user-attachments/assets/99719c47-5c9a-4c8c-a5d7-f790a45b01fb" />
+<img width="1823" height="977" alt="Screenshot 2025-06-25 215936 png" src="https://github.com/user-attachments/assets/b2f6ee1d-6219-426e-8da6-657feb09943d" />
+
+
+Future goals: 
+- 1 To make it more accessible to users
+- 2 Connecting to Hugston Repository for curated models
+- 3 Adding chat between HugstonOne Users for real time talk
+- 4 Integrating better memory options like Memos Framework
+
 
 
 
