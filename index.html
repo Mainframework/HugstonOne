@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <title>HugstonOne V1.0.1     Visit hugston.com     Contact admin@hugston.com</title>
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="./style.css">
+
+  <style>
+    /*    General Styles   ───────────────────────────────────────────── */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      background-color: #f4f4f9;
+      position: relative;
+      min-height: 100vh;
+    }
+
+    #app {
+      display: flex;
+      width: 100%;
+      height: 100vh;
+    }
+
+    .toggle-btn {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      background: #333;
+      color: #fff;
+      font-size: 1.5em;
+      padding: 4px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      z-index: 1000;
+    }
+
+    /*    Sidebar Styles   ───────────────────────────────────────────── */
+    #sidebar {
+      width: 200px;
+      background-color: #fff;
+      padding: 20px;
+      box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+    }
+
+    #sidebar.hidden {
+      transform: translateX(-100%);
+    }
+
+    #sidebar select,
+    #sidebar button {
+      width: 100%;
+      padding: 1px;
+      margin-top: 2px;
+      border: 1px outset #ccc;
+      border-radius: 4px;
+      cursor: pointer;
+      color: #fff;
+      background: #006bce;
+    }
+
+    #sidebar progress {
+      width: 100%;
+      margin-top: 8px;
+    }
+
+    #loadPct,
+    #modelStatus {
+      color: #000;
+    }
+
+    /*    Main Content Styles   ──────────────────────────────────────── */
+    #main {
+      flex-grow: 1;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      position: relative;
+    }
+
+    #chatWindow {
+      flex-grow: 1;
+      background-color: #fff;
+      padding: 10px;
+      border-radius: 4px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      overflow-y: auto;
+    }
+
+    .message {
+      padding: 8px 10px;
+      margin: 6px 0;
+      border-radius: 6px;
+      max-width: 90%;
+      word-break: break-word;
+    }
+
+    .message.user{
+  background:#fff;          /* plain white bubble */
+  color:var(--text);        /* same dark text you use elsewhere */
+  align-self:flex-end;
+}
+
+
+
+    .message.bot {
+      background-color: #f0f0f0;
+      align-self: flex-start;
+      color: #000;
+    }
+
+    .message.bot.markdown pre {
+      background: #000;
+      color: #0f0;
+      padding: 6px;
+      border-radius: 4px;
+      overflow-x: auto;
+      line-height: 1.4;
+    }
+
+    
+
+    /*    Input Area Styles   ────────────────────────────────────────── */
+    #inputArea {
+      display: flex;
+      gap: 10px;
+      align-items: flex-end;
+      position: relative;
+      z-index: 1;
+    }
+
+    #uploadFilesBtn {
+      padding: 6px;
+      font-size: 1em;
+      cursor: pointer;
+      background: #000;
+      color: #0f0;
+      border: none;
+      border-radius: 4px;
+    }
+
+    #promptInput {
+      flex-grow: 1;
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      resize: none;
+    }
+
+    #promptInput::placeholder {
+      color: #999;
+    }
+
+    #sendBtn,
+    #stopBtn,
+    #toggleTerminalBtn {
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      cursor: pointer;
+      background: #fafafa;
+      color: #333;
+    }
+
+    #terminal {
+      background-color: #000;
+      color: #0f0;
+      padding: 10px;
+      border-radius: 4px;
+      white-space: pre-wrap;
+      font-family: monospace;
+      font-size: 12px;
+      overflow-y: auto;
+      max-height: 200px;
+    }
+
+    .hidden {
+      display: none;
+    }
+/*    Preview Styles   ────────────────────────────────────────────── */
+#previewContainer {
+  position: fixed;
+  bottom: 90px;        /* sits above the advertisement bar */
+  right: 20px;         /* dial in for horizontal offset */
+  width: 320px;
+  height: 180px;
+  background: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  overflow: hidden;
+  z-index: 1000;
+}
+
+#previewContainer.minimized {
+  width: 140px;
+  height: 30px;
+}
+
+#previewContainer.minimized > :not(.minimize-btn, .preview-toggle) {
+  display: none;
+}
+
+.minimize-btn,
+.preview-toggle {
+  position: absolute;
+  top: 5px;
+  z-index: 1001;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.2em;
+  color: #333;
+}
+
+.minimize-btn {
+  right: 5px;
+}
+
+.preview-toggle {
+  right: 35px;       /* sits just to the left of the minimize button */
+}
+
+.preview-frame {
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-radius: 4px;
+  display: block;
+}
+
+
+    /*    Advertisement Bar Styles   ─────────────────────────────────── */
+    #footerLinks {
+      text-align: center;
+      margin-top: 10px;
+      position: absolute;
+      bottom: 2px;
+      right: 100px;
+      z-index: 100;
+      background: #fff;
+      padding: 2px;
+      border-radius: 2px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    #footerLinks a {
+      color: #007bff;
+      text-decoration: none;
+      margin: 0 10px;
+    }
+
+    #footerLinks a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <!-- Sidebar Toggle -->
+<button id="toggleSidebar" class="toggle-btn" style="position: fixed; top: 1px; left: 1px; width: 40px; height: 30px; background-color:
+ #006bce;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 1000; ">↹</button>
+
+  <div id="app">
+    <div id="sidebar">
+      <ul id="sessionsList"></ul>
+      <button id="newSession">New Session</button>
+      <button id="deleteSession" disabled>Delete Session</button>
+
+      <h2>Model</h2>
+      <button id="chooseLlmBtn">Choose LLM Folder…</button>
+      <select id="modelSelect" disabled></select>
+      <button id="loadModelBtn" disabled>Load</button>
+      <button id="unloadModelBtn" disabled>Unload</button>
+
+      <progress id="loadProgress" max="100" value="0"></progress>
+      <span id="loadPct">0%</span>
+      <div id="modelStatus">idle</div>
+
+      <h2>Settings</h2>
+      <label>Threads: <input id="threadsInput" type="number" min="1"/></label>
+      <label>GPU Layers: <input id="gpuLayersInput" type="number" min="0"/></label>
+      <label>Context Size: <input id="ctxSizeInput" type="number" min="1"/></label>
+      <label>Batch Size: <input id="batchSizeInput" type="number" min="1"/></label>
+      <label><input id="flashAttnCheckbox" type="checkbox"/> Flash Attention</label>
+      <label><input id="useGpuCheckbox" type="checkbox"/> Use GPU</label>
+    </div>
+
+    <div id="main">
+      <div id="chatWindow"></div>
+
+      <div id="inputArea">
+        <!-- Hidden file input for uploads -->
+        <input
+          type="file"
+          id="fileInput"
+          multiple
+          accept="*/*"
+          style="display:none;"
+        />
+        <!-- Black-hole upload button -->
+        <button id="uploadFilesBtn" title="Upload files (≤100 MB)">🕳️</button>
+
+        <textarea id="promptInput" placeholder="Type your prompt…"></textarea>
+        <button id="sendBtn" disabled>Send</button>
+        <button id="stopBtn" disabled>Stop</button>
+        <button id="toggleTerminalBtn">Terminal</button>
+      </div>
+
+      <pre id="terminal" class="hidden"></pre>
+
+      <!-- Preview Container -->
+      <div id="previewContainer">
+        <button id="minimizePreviewBtn" class="minimize-btn">−</button>
+        <button id="togglePreviewBtn" class="preview-toggle">Expand Preview</button>
+        <iframe id="previewFrame" class="preview-frame"></iframe>
+      </div>
+
+      <!-- clickable footer links under terminal -->
+      <div id="footerLinks">
+        <a href="https://hugston.com" target="_blank">HugstonOne V1.0.1</a>
+        &mdash;
+        <a href="https://hugston.com" target="_blank">Visit hugston.com</a>
+        &mdash;
+        <a href="mailto:admin@hugston.com">Contact admin@hugston.com</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Local Markdown parser & syntax highlighter -->
+  <script src="./marked.min.js"></script>
+  <script src="./highlight.min.js"></script>
+  <script>
+    if (window.hljs) {
+      hljs.configure({ ignoreUnescapedHTML: true });
+    }
+  </script>
+
+  <!-- Minimize / Restore Preview Handler -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const pc  = document.getElementById('previewContainer');
+      const btn = document.getElementById('minimizePreviewBtn');
+      const toggleBtn = document.getElementById('togglePreviewBtn');
+      btn.addEventListener('click', () => {
+        pc.classList.toggle('minimized');
+        btn.textContent = pc.classList.contains('minimized') ? '□' : '−';
+        toggleBtn.style.display = pc.classList.contains('minimized') ? 'inline-block' : 'none';
+      });
+      toggleBtn.addEventListener('click', () => {
+        pc.classList.toggle('minimized');
+        btn.textContent = pc.classList.contains('minimized') ? '□' : '−';
+        toggleBtn.style.display = pc.classList.contains('minimized') ? 'inline-block' : 'none';
+      });
+    });
+  </script>
+
+  <!-- Sidebar Toggle with Persistence -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const sidebar = document.getElementById('sidebar');
+      const toggleBtn = document.getElementById('toggleSidebar');
+      const hidden = localStorage.getItem('sidebarHidden') === 'true';
+      if (hidden) sidebar.classList.add('hidden');
+      toggleBtn.addEventListener('click', () => {
+        sidebar.classList.toggle('hidden');
+        localStorage.setItem('sidebarHidden', sidebar.classList.contains('hidden'));
+      });
+    });
+  </script>
+
+  <!-- Visualization Libraries (All Loaded Locally) -->
+  <script src="./libs/d3/d3.min.js"></script>
+  <script src="./libs/chart/Chart.min.js"></script>
+  <script src="./libs/plotly/plotly.min.js"></script>
+  <script src="./libs/google-charts/loader.js"></script>
+  <script src="./libs/mermaid/mermaid.min.js"></script>
+
+  <!-- Renderer Logic (Local) -->
+  <script src="./renderer.js"></script>
+</body>
+</html>

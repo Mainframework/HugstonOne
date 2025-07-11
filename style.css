@@ -1,0 +1,466 @@
+/* -----------------------------------------------------------------
+   GLOBAL FONT SETUP
+   ----------------------------------------------------------------- */
+
+/* 1.  Text fonts – Noto Sans Variable covers 150+ scripts           */
+@font-face {
+  font-family: "Noto Sans Variable";
+  font-style: normal;
+  font-weight: 100 900;                             /* variable axis */
+  src: url("/fonts/NotoSans-Variable.woff2") format("woff2-variations"),
+       url("/fonts/NotoSans-Variable.ttf") format("truetype");
+  font-display: swap;
+}
+
+/* 2.  Symbols, arrows, dingbats, Braille, etc.                      */
+@font-face {
+  font-family: "Noto Sans Symbols 2";
+  font-style: normal;
+  font-weight: 400;
+  src: url("/fonts/NotoSansSymbols2-Regular.woff2") format("woff2"),
+       url("/fonts/NotoSansSymbols2-Regular.ttf")  format("truetype");
+  font-display: swap;
+}
+
+/* 3.  Colour emoji – modern browsers prefer the tiny COLRv1 build   */
+@font-face {
+  font-family: "Noto Color Emoji";
+  src: url("/fonts/NotoColorEmoji_COLRv1.woff2") format("woff2") tech(color-COLRv1);
+  font-display: swap;
+}
+@font-face {                                     /* legacy bitmap fallback */
+  font-family: "Noto Color Emoji";
+  src: url("/fonts/NotoColorEmoji.ttf") format("truetype");
+  font-display: swap;
+}
+
+/* 4.  Monospace stack that still knows emoji                         */
+@font-face {
+  font-family: "JetBrains Mono";
+  font-style: normal;
+  font-weight: 100 800;
+  src: url("/fonts/JetBrainsMono-Variable.woff2") format("woff2-variations"),
+       url("/fonts/JetBrainsMono-Variable.ttf")   format("truetype");
+  font-display: swap;
+}
+
+/* -----------------------------------------------------------------
+   THEME VARIABLES
+   ----------------------------------------------------------------- */
+:root {
+  --sidebar-bg: #2c3e50;
+  --sidebar-text: #ecf0f1;
+  --main-bg: #f5f6fa;
+  --card-bg: #ffffff;
+  --accent: #3498db;
+  --accent-hover: #2980b9;
+  --text: #2c3e50;
+  --muted: #7f8c8d;
+  --code-bg: #1e1e1e;
+  --code-text: #dcdcdc;
+  --input-bg: #fff;
+  --input-border: #ccc;
+  --btn-radius: 4px;
+
+  /* NEW → font-family tokens */
+  --ff-text: "Noto Sans Variable", "Noto Sans", "Noto Sans Symbols 2",
+             "Noto Color Emoji", system-ui, sans-serif;
+  --ff-mono: "JetBrains Mono", "Noto Sans Mono", "Noto Color Emoji", monospace;
+}
+
+/* -----------------------------------------------------------------
+   RESET & BASE
+   ----------------------------------------------------------------- */
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: var(--ff-text); /* ← was `sans-serif` */
+  background: var(--main-bg);
+  color: var(--text);
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+/* -----------------------------------------------------------------
+   LAYOUT
+   ----------------------------------------------------------------- */
+#app {
+  display: flex;
+  height: 100%;
+  position: relative;
+}
+
+/* Sidebar toggle */
+.toggle-btn {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  padding: 6px 8px;
+  font-size: 1.2em;
+  background: var(--sidebar-bg);
+  color: var(--sidebar-text);
+  border: none;
+  border-radius: var(--btn-radius);
+  cursor: pointer;
+  z-index: 1000;
+}
+.toggle-btn:hover {
+  background: #1f2a36;
+}
+
+/* Sidebar */
+#sidebar {
+  width: 280px;
+  background: var(--sidebar-bg);
+  color: var(--sidebar-text);
+  padding: 20px;
+  overflow-y: auto;
+}
+#sidebar.hidden {
+  display: none;
+}
+#sidebar h2 {
+  margin-top: 0;
+  font-weight: 600;
+}
+
+/* Sidebar Controls */
+#sidebar button,
+#sidebar select,
+#sidebar input {
+  width: 100%;
+  margin: 8px 0;
+  font-family: inherit;
+}
+#sidebar button {
+  background: var(--accent);
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: var(--btn-radius);
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+#sidebar button:hover {
+  background: var(--accent-hover);
+}
+#sidebar select,
+#sidebar input {
+  padding: 8px;
+  border: 1px solid var(--input-border);
+  border-radius: var(--btn-radius);
+  background: var(--input-bg);
+  color: var(--text);
+}
+
+/* Sessions List */
+#sessionsList {
+  list-style: none;
+  padding: 0;
+  margin: 12px 0;
+}
+#sessionsList li {
+  padding: 8px;
+  margin-bottom: 6px;
+  background: #34495e;
+  border-radius: var(--btn-radius);
+  cursor: pointer;
+  transition: background 0.2s;
+}
+#sessionsList li:hover,
+#sessionsList li.active {
+  background: #3d566e;
+}
+
+/* Main Layout */
+#main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+#main.preview-fullscreen {
+  position: absolute;
+  top: 0;
+  left: 280px;
+  right: 0;
+  bottom: 0;
+  background: #fff;
+  z-index: 10;
+}
+#main.preview-fullscreen #chatWindow,
+#main.preview-fullscreen #inputArea,
+#main.preview-fullscreen #terminal {
+  display: none;
+}
+#main.preview-fullscreen .preview-toggle {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  z-index: 1000;
+}
+#main.preview-fullscreen #previewContainer {
+  position: static !important;
+  width: auto !important;
+  height: auto !important;
+  border: none !important;
+  box-shadow: none !important;
+  flex: 1;
+}
+
+/* Chat */
+#chatWindow {
+  flex: 1;
+  padding: 20px;
+  background: var(--card-bg);
+  overflow-y: auto;
+}
+
+.message {
+  margin: 10px 0;
+  max-width: 75%;
+  line-height: 1.4;
+}
+.message.user {
+  align-self: flex-end;
+  background: var(--accent);
+  color: #fff;
+  padding: 10px;
+  border-radius: var(--btn-radius) var(--btn-radius) 0 var(--btn-radius);
+}
+.message.bot {
+  background: var(--input-bg);
+  color: var(--text);
+  padding: 10px;
+  border-radius: var(--btn-radius) var(--btn-radius) var(--btn-radius) 0;
+}
+
+/* Input Area */
+#inputArea {
+  display: flex;
+  padding: 12px;
+  background: var(--card-bg);
+  border-top: 1px solid #ddd;
+}
+#inputArea textarea {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid var(--input-border);
+  border-radius: var(--btn-radius);
+  resize: none;
+  font-family: inherit;
+}
+#inputArea button {
+  margin-left: 8px;
+  padding: 10px 16px;
+  background: var(--accent);
+  color: #fff;
+  border: none;
+  border-radius: var(--btn-radius);
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+#inputArea button:hover {
+  background: var(--accent-hover);
+}
+
+/* Terminal */
+#terminal {
+  flex: 0 0 150px;
+  background: #000;
+  color: #0f0;
+  font-family: var(--ff-mono); /* ← emoji-safe monospace */
+  font-size: 0.9em;
+  padding: 8px;
+  overflow-y: auto;
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+#terminal.hidden {
+  display: none;
+}
+
+/* Preview Container */
+#previewContainer {
+  position: absolute;
+  bottom: 80px;
+  right: 20px;
+  width: 360px;
+  height: 260px;
+  background: var(--card-bg);
+  border: 1px solid var(--input-border);
+  border-radius: var(--btn-radius);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  overflow: auto;
+  z-index: 500;
+}
+#previewContainer img,
+#previewContainer svg,
+#previewContainer iframe {
+  max-width: 100%;
+  display: block;
+  margin: 8px 0;
+}
+#previewContainer .minimize-btn {
+  position: absolute;
+  top: 6px;
+  right: 6px;
+  background: transparent;
+  border: none;
+  font-size: 1.2em;
+  cursor: pointer;
+  color: var(--muted);
+}
+#previewContainer .minimize-btn:hover {
+  color: var(--text);
+}
+
+/* Expand Preview Button */
+.preview-toggle {
+  align-self: center;
+  margin: 4px 0;
+  padding: 6px 12px;
+  background: var(--accent);
+  color: #fff;
+  border: none;
+  border-radius: var(--btn-radius);
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.2s;
+}
+.preview-toggle:hover {
+  background: var(--accent-hover);
+}
+
+/* Code Blocks & Syntax Highlighting */
+.message.bot.markdown pre {
+  background: var(--code-bg) !important;
+  color: var(--code-text) !important;
+  position: relative;
+  counter-reset: lineno;
+  font-family: var(--ff-mono); /* ← emoji-safe monospace */
+}
+.message.bot.markdown pre code {
+  display: block;
+}
+.message.bot.markdown pre code span.ln {
+  display: block;
+  padding-left: 3rem;
+  position: relative;
+}
+.message.bot.markdown pre code span.ln::before {
+  counter-increment: lineno;
+  content: counter(lineno);
+  position: absolute;
+  left: 0;
+  width: 2.5rem;
+  text-align: right;
+  color: rgba(0, 0, 0, 0.3);
+  user-select: none;
+}
+.message.bot.markdown pre code.hljs {
+  background: transparent !important;
+  color: inherit !important;
+}
+
+/* Highlight colour overrides */
+.hljs-comment,
+.hljs-quote {
+  color: #5c6370;
+}
+.hljs-keyword,
+.hljs-selector-tag,
+.hljs-literal {
+  color: #c678dd;
+}
+.hljs-string,
+.hljs-meta .hljs-string {
+  color: #98c379;
+}
+.hljs-number,
+.hljs-built_in,
+.hljs-builtin-name {
+  color: #d19a66;
+}
+.hljs-variable,
+.hljs-template-variable {
+  color: #e06c75;
+}
+.hljs-title,
+.hljs-section,
+.hljs-selector-id {
+  color: #61afef;
+}
+.hljs-subst {
+  color: #abb2bf;
+}
+.hljs-type,
+.hljs-class .hljs-title {
+  color: #e5c07b;
+}
+.hljs-tag,
+.hljs-name,
+.hljs-attribute {
+  color: #e06c75;
+}
+.hljs-regexp,
+.hljs-link,
+.hljs-symbol,
+.hljs-bullet {
+  color: #56b6c2;
+}
+.hljs-meta,
+.hljs-deletion {
+  color: #c678dd;
+}
+.hljs-addition {
+  color: #98c379;
+}
+.hljs-emphasis {
+  font-style: italic;
+}
+.hljs-strong {
+  font-weight: bold;
+}
+
+/* Buttons inside code blocks */
+.copy-btn {
+  position: absolute;
+  top: 4px;
+  right: 6px;
+  font-size: 0.8em;
+  padding: 4px 8px;
+  background: #444;
+  color: #fff;
+  border: none;
+  border-radius: var(--btn-radius);
+  cursor: pointer;
+  opacity: 0.7;
+}
+.copy-btn:hover {
+  opacity: 1;
+}
+/* white sidebar + dark text */
+#sidebar{
+  background:#fff !important;
+}
+#sidebar label,
+#sidebar h2{
+  color:var(--text) !important;   /* #2c3e50 */
+}
+
