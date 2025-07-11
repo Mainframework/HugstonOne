@@ -2,6 +2,8 @@
 
 **The free AI in A Box for all**
 
+- [![](https://img.youtube.com/vi/zL2l60qpJk0/0.jpg)](https://youtu.be/zL2l60qpJk0?si=Ok_a5P6MMijxx5Hw)
+
 A **Workflow/Software for AI inference**.
 - **Image to text / Text to text**
 - **GPU (Nvidia) / CPU support**
@@ -20,7 +22,7 @@ A **Workflow/Software for AI inference**.
 - **AI-powered diagnostics** for X-rays, MRI, drawings, 3D modeling, etc. (via Image-to-Text)
 - **Multitasking like a browser/app**, now equipped with AI—no subscription or worry about costs
 
-- [![](https://img.youtube.com/vi/zL2l60qpJk0/0.jpg)](https://youtu.be/zL2l60qpJk0?si=Ok_a5P6MMijxx5Hw)
+
 
 ---
 
