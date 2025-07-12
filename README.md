@@ -70,13 +70,24 @@ Of the 1.0.4 and 1.0.5
 <img width="1823" height="977" alt="Screenshot 2025-06-25 215936 png" src="https://github.com/user-attachments/assets/b2f6ee1d-6219-426e-8da6-657feb09943d" />
 
 
-Future goals: 
+## **Future goals:** 
 - 1 To make it more accessible to users
 - 2 Connecting to Hugston Repository for curated models
 - 3 Adding chat between HugstonOne Users for real time talk
 - 4 Integrating better memory options like Memos Framework
 - 5 Build for Linux, MacOs, Mobile Platforms. 
 
+
+## **Credits**
+
+- Co-authored-by: Leyden Fernandez Vidal [https://github.com/microbioinformatic](https://github.com/microbioinformatic)
+
+## Acknowledgments
+
+This project bundles the following third-party libraries:
+
+- [llama.cpp](https://github.com/ggerganov/llama.cpp) by Georgi Gerganov et al. 
+- [Electron](https://www.electronjs.org/)   
 
 
 
