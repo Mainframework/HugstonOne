@@ -1,16 +1,26 @@
-# HugstonOne 1.0.5 Enterprise Edition
+# HugstonOne 1.0.7 Enterprise Edition
 
 **The free AI in A Box for all** 
-Standalone with installer and portable for windows. 
+Standalone with installer (exe, msi) and portable for windows. 
 
-- [![](https://img.youtube.com/vi/zL2l60qpJk0/0.jpg)](https://youtu.be/zL2l60qpJk0?si=Ok_a5P6MMijxx5Hw)
+
+
+
+https://github.com/user-attachments/assets/7240700e-9f37-4001-b5f8-f156ec7716c4
+
+
+
 
 A **Workflow/Software for AI inference**.
 - **Image to text / Text to text**
+- **Offline/Online Mode for model and data isolation**
+- **Load LLM Models in CLI or SERVER (both with image processing mode integrated**
+- **Local API with CORS option**
 - **GPU (Nvidia) / CPU support**
 - **Instant Preview of the code**
-- **GGUF support**
-- **Session and minisessions with memory**
+- **Code Editior also with preview**
+- **GGUF support 10000+ LLM Models**
+- **Session and minisessions with persistent memory**
 - **Offline/Online Button** for completely offline (cutting all connections)
 - **Terminal** for advanced use (with edit mode active)
 - **Upload files** (only TXT and JPEG/PNG) for now
@@ -32,22 +42,21 @@ A **Workflow/Software for AI inference**.
 - **We don’t collect user data**
 - **No forced updates** included in the app
 - **No telemetry**
-- **No HTTP involved** (we use local CLI)
+- **No HTTP involved** (load with local CLI)
 - **No internet required** unless explicitly chosen by the user
-- **No API required**
-- **Supports long lines of code (1000/tab)**
-- **No refusal** if you get the right LLM model (potential for 200,000+ code lines, divided into 1000-2000 lines at once)
+- **No API key required**
+- **Supports long lines of code Input/Output (50000+ tokens tested/tab)**
+- **No refusal** Using the right LLM model (potential for 200,000+ code lines, divided into 1000-5000-20000 lines at once)
 - **Completely free**
 
 ---
 
 ### **Getting Started**
-First-time users need to request the activation code (including the unique key) via email to:
+First-time users need to request the activation code via email to:
 - **HugstonOne@Hugston.com**
 *(Check spam if the email is delayed, as we are a new service.)*
 
-**Example Key:**
-`7935c0c12240124df62dcb14c6e90234986f2102417b25cf6cb8457697d0e629`
+
 
 <img width="1820" height="958" alt="Screenshot 2025-06-25 132746" src="https://github.com/user-attachments/assets/dea7454d-9cd8-4f72-bcac-57ec60027a2d" />
 
@@ -56,7 +65,7 @@ First-time users need to request the activation code (including the unique key) 
 **Enjoy!**
 
 Some examples: 
-Of the 1.0.4 and 1.0.5
+Of the previous versions
 
 <img width="1823" height="978" alt="Screenshot 2025-07-11 181652 png" src="https://github.com/user-attachments/assets/4a47c740-7a77-4c51-8529-987a3607ed78" />
 <img width="1656" height="972" alt="Screenshot 2025-07-11 181353 png" src="https://github.com/user-attachments/assets/c026d3a6-6782-4e2d-8684-34f992a512af" />
@@ -79,6 +88,8 @@ Of the 1.0.4 and 1.0.5
 
 
 ## **Credits**
+
+Many thanks for the great job to:
 
 - Co-authored-by: Leyden Fernandez Vidal [https://github.com/microbioinformatic](https://github.com/microbioinformatic)
 
