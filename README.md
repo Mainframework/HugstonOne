@@ -67,11 +67,10 @@ First-time users need to request the activation code via email to:
 Some examples: 
 Of the previous versions
 
+<img width="1823" height="977" alt="Screenshot 2025-07-16 133301" src="https://github.com/user-attachments/assets/ce430f46-93f4-4bc8-bbfc-031cf15cc4bb" />
 <img width="1823" height="978" alt="Screenshot 2025-07-11 181652 png" src="https://github.com/user-attachments/assets/4a47c740-7a77-4c51-8529-987a3607ed78" />
-<img width="1656" height="972" alt="Screenshot 2025-07-11 181353 png" src="https://github.com/user-attachments/assets/c026d3a6-6782-4e2d-8684-34f992a512af" />
 <img width="1657" height="975" alt="Screenshot 2025-07-11 181324 png" src="https://github.com/user-attachments/assets/a442296a-4279-43f7-8458-53991b9f1558" />
 <img width="1655" height="975" alt="Screenshot 2025-07-11 181253 png" src="https://github.com/user-attachments/assets/03d14535-9342-49b4-baef-bd09f24fde55" />
-<img width="1081" height="745" alt="Screenshot 2025-07-09 222036 png" src="https://github.com/user-attachments/assets/1bd5aa0d-cade-4444-a356-47f4ada6606f" />
 <img width="1823" height="976" alt="Screenshot 2025-07-01 114036 png" src="https://github.com/user-attachments/assets/d0cd1c43-b331-4b9b-91b5-d929ca80d1fd" />
 <img width="1823" height="977" alt="Screenshot 2025-07-01 103250 png" src="https://github.com/user-attachments/assets/c31e2c37-49c6-4ada-963b-86ad4870299e" />
 <img width="1823" height="972" alt="Screenshot 2025-06-29 235430 png" src="https://github.com/user-attachments/assets/0639fb14-1f17-411a-b425-a9cd46a2924e" />
