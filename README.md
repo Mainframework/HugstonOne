@@ -6,6 +6,10 @@ Standalone with installer (exe, msi) and portable for windows.
 
 
 
+https://github.com/user-attachments/assets/89a094ec-48cd-45ad-8743-c9427f43abc9
+
+
+
 https://github.com/user-attachments/assets/7240700e-9f37-4001-b5f8-f156ec7716c4
 
 
