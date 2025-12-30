@@ -25,6 +25,7 @@ A **Workflow/Software for AI inference**.
 - **Code Editior also with preview**
 - **GGUF support 10000+ LLM Models**
 - **Session and minisessions with persistent memory**
+- **User data memory with option On/Off**
 - **Offline/Online Button** for completely offline (cutting all connections)
 - **Terminal** for advanced use (with edit mode active)
 - **Upload files** (only TXT and JPEG/PNG) for now
@@ -43,10 +44,12 @@ A **Workflow/Software for AI inference**.
 
 # **Our Strongest Points:**
 
+
 - **We don’t collect user data**
 - **No forced updates** included in the app
 - **No telemetry**
 - **No HTTP involved** (load with local CLI)
+- **1 click Install (Windows)**
 - **No internet required** unless explicitly chosen by the user
 - **No API key required**
 - **Supports long lines of code Input/Output (50000+ tokens tested/tab)**
@@ -86,7 +89,7 @@ Of the previous versions
 - 1 To make it more accessible to users
 - 2 Connecting to Hugston Repository for curated models
 - 3 Adding chat between HugstonOne Users for real time talk
-- 4 Integrating better memory options like Memos Framework
+- 4 Integrating better memory options
 - 5 Build for Linux, MacOs, Mobile Platforms. 
 
 
