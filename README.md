@@ -100,7 +100,7 @@ Many thanks for the great job to:
 
 This project bundles the following third-party libraries:
 
-- [llama.cpp](https://github.com/ggerganov/llama.cpp) by Georgi Gerganov et al. 
+- [llama.cpp](https://github.com/ggerganov/llama.cpp) 
 - [Electron](https://www.electronjs.org/)   
 
 
