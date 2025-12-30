@@ -1,7 +1,7 @@
 # HugstonOne 1.0.8 Enterprise Edition
 
 **The free AI in A Box for all** 
-Standalone with installer (exe, msi) and portable for windows. 
+with installer (exe, msi) and portable for windows. 
 
 
 
@@ -62,7 +62,7 @@ A **Workflow/Software for AI inference**.
 First-time users need to request the activation code via email to:
 - **HugstonOne@Hugston.com**
 *(Check spam if the email is delayed, as we are a new service.)*
-
+Requirements: Visual c++ (Or Visual studio with c++). 
 
 
 <img width="1820" height="958" alt="Screenshot 2025-06-25 132746" src="https://github.com/user-attachments/assets/dea7454d-9cd8-4f72-bcac-57ec60027a2d" />
