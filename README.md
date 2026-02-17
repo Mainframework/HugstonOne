@@ -1,4 +1,4 @@
-# HugstonOne 1.0.8 Enterprise Edition
+# HugstonOne 1.0.9 Enterprise Edition
 
 **The free AI in A Box for all** 
 with installer (exe, msi) and portable for windows. 
