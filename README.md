@@ -6,6 +6,10 @@ with installer (exe, msi) and portable for windows.
 
 
 
+https://github.com/user-attachments/assets/7830fa55-b1f6-4264-b5d3-ac6e5f64e9d0
+
+
+
 https://github.com/user-attachments/assets/89a094ec-48cd-45ad-8743-c9427f43abc9
 
 
