@@ -1,9 +1,7 @@
-# HugstonOne 1.0.9 Enterprise Edition
+# HugstonOne Enterprise Edition
 
 **The free AI in A Box for all** 
 with installer (exe, msi) and portable for windows. 
-
-# Retiring the last release, from 17/feb 2026 HugstonOne 1.0.9 Enterprise Edition and later will be available only to commercial/paid users. All the previous versions remain free. 
 
 
 https://github.com/user-attachments/assets/7830fa55-b1f6-4264-b5d3-ac6e5f64e9d0
