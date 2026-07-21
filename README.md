@@ -13,7 +13,7 @@ The upgraded version only available  [Hugston Website](https://Hugston.com)
 <img width="2542" height="1057" alt="02_live_chat" src="https://github.com/user-attachments/assets/86be6c37-4183-4e07-bf46-e6dd20facc97" />
 <img width="1841" height="1491" alt="01_internet_modes_points" src="https://github.com/user-attachments/assets/86c9059f-3194-442b-9b67-56b0a36b9efa" />
 <img width="2542" height="1105" alt="01_internet_modes" src="https://github.com/user-attachments/assets/3b0f23ae-5836-4bd4-8ae8-e5f590233231" />
-<img width="1841" height="1498" alt="06_agents_rag_cli_points" src="https://github.com/user-attachments/assets/4540a8dc-85bb-4efb-8ba4-664b2a5bfae0" />
+
 <img width="2542" height="1537" alt="06_agents_rag_cli" src="https://github.com/user-attachments/assets/395e3f8b-43d2-414d-ad02-43f4183f6de6" />
 <img width="1841" height="1494" alt="05_coding_mode_points" src="https://github.com/user-attachments/assets/127aeed3-0a92-43d4-a634-9cfd077f1aa5" />
 
