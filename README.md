@@ -3,6 +3,8 @@
 **The free AI in A Box for all** 
 with installer (exe, msi) and portable for windows. Is available our github releases. 
 
+Whitepaper and benchs: https://doi.org/10.5281/zenodo.21471816
+
 The upgraded version only available  [Hugston Website](https://Hugston.com) 
 <img width="2542" height="1081" alt="05_coding_mode" src="https://github.com/user-attachments/assets/624acbb2-59c4-4949-9075-3ae0708a559a" />
 <img width="1841" height="1492" alt="04_context_runtime_points" src="https://github.com/user-attachments/assets/a59e9448-cc4a-42b0-bbe0-7b2561f3dff4" />
