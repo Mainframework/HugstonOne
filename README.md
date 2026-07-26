@@ -1,7 +1,7 @@
 # HugstonOne Enterprise Edition
 
-**The free AI in A Box for all** 
-with installer (exe, msi) and portable for windows. Is available our github releases. 
+**The AI in A Box for all** 
+Major upgrade release Video-Audio-Image processing included in our Website. 
 
 Whitepaper and benchs: https://doi.org/10.5281/zenodo.21471816
 
