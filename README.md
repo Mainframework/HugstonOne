@@ -3,7 +3,7 @@
 **The AI in A Box for all** 
 Major upgrade release Video-Audio-Image processing included in our Website. 
 
-Whitepaper and benchs: https://doi.org/10.5281/zenodo.21471816
+Whitepaper and benchs: [https://doi.org/10.5281/zenodo.21471816](https://doi.org/10.5281/zenodo.21600618)
 
 The upgraded version only available at:   [Hugston Website](https://Hugston.com) 
 <img width="2542" height="1081" alt="05_coding_mode" src="https://github.com/user-attachments/assets/624acbb2-59c4-4949-9075-3ae0708a559a" />
