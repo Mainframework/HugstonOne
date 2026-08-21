@@ -6,7 +6,41 @@ Major upgrade release Video-Audio-Image processing included in our Website.
 Whitepaper and benchs: [https://doi.org/10.5281/zenodo.21471816](https://doi.org/10.5281/zenodo.21600618)
 
 The upgraded version only available at:   [Hugston Website](https://Hugston.com) 
+
+---
+
 <img width="2542" height="1081" alt="05_coding_mode" src="https://github.com/user-attachments/assets/624acbb2-59c4-4949-9075-3ae0708a559a" />
+
+---
+
+- **Image/Audio/Video/PDF/Multifiletype/Text to text**
+- **Fast Audio/Video files Transcriptions**
+- **Offline/Online Mode for model and data isolation, completely offline (cutting all connections)**
+- **Load LLM Models in CLI or SERVER (both with Multifile processing mode integrated**
+- **3 Layer Memory, Session and minisessions with persistent memory**
+- **Local API with CORS option**
+- **GPU (Nvidia) / CPU support**
+- **Instant Preview of the code/websearch/news**
+- **Advanced Code Editor also with preview**
+- **Native Agents/skills/tools**
+- **GGUF support 10000+ LLM Models**
+- **User data memory with option On/Off**
+- **Wipe Memory feature**
+- **Terminal** for advanced use (with edit mode active)
+- **Export tables in CSV** and save sessions/tabs/preview
+- **Great coding assistant** (hopping from tab to tab, conserving memory, solving the ctx size and memory issue)
+- **Live news feed** on the app while working (can retrieve all news/radio/podcast feeds)
+- **Ideal for Medical Research GDPR/HIPPA compliant** (with free medical models available from Hugston.com)
+- **AI-powered diagnostics** for X-rays, MRI, drawings, 3D modeling, etc. (via Image-to-Text)
+- **Live Pentest, Webscrapping, Deepsearch**
+- **Powerful R.A.G Algorithms in terabytes range**
+- **Speculative Decoding MTP, Dspark, Eagle etc**
+- **Up to 10 Million CTX**
+- **Live Encrypted chat among HugstonOne Users** Send all sessions or just one tab in 1 click to your team members securely
+- **Works great with, Qwen, Mistral, Deepseek, GLM, Minimax, Kimi, Stepflash, LFM, Granite, Inkling, GPTOSS,  All OCR models...**
+
+---
+
 <img width="1841" height="1492" alt="04_context_runtime_points" src="https://github.com/user-attachments/assets/a59e9448-cc4a-42b0-bbe0-7b2561f3dff4" />
 <img width="2542" height="1105" alt="04_context_runtime" src="https://github.com/user-attachments/assets/32822496-514b-4b5a-b0a7-33869b3e4422" />
 <img width="1841" height="1400" alt="03_preview_points" src="https://github.com/user-attachments/assets/adf2090e-5b94-4024-abcb-e7f2718331be" />
@@ -20,90 +54,34 @@ The upgraded version only available at:   [Hugston Website](https://Hugston.com)
 <img width="1841" height="1494" alt="05_coding_mode_points" src="https://github.com/user-attachments/assets/127aeed3-0a92-43d4-a634-9cfd077f1aa5" />
 
 
-
-
-
-A **Workflow/Software for AI inference**.
-- **Image to text / Text to text**
-- **Offline/Online Mode for model and data isolation**
-- **Load LLM Models in CLI or SERVER (both with image processing mode integrated**
-- **Local API with CORS option**
-- **GPU (Nvidia) / CPU support**
-- **Instant Preview of the code**
-- **Code Editior also with preview**
-- **GGUF support 10000+ LLM Models**
-- **Session and minisessions with persistent memory**
-- **User data memory with option On/Off**
-- **Offline/Online Button** for completely offline (cutting all connections)
-- **Terminal** for advanced use (with edit mode active)
-- **Upload files** (only TXT and JPEG/PNG) for now
-- **Export tables in CSV** and save sessions/tabs/preview
-- **Easy to create Webpages/Graphic interfaces**
-- **Great for creating games, tables, maps with data, charts, plots**
-- **Good coding assistant** (hopping from tab to tab, conserving memory, solving the ctx size and memory issue)
-- **Live news feed** on the app while working (can retrieve all news/radio/podcast feeds)
-- **Ideal for Medical Research** (with free medical models available from HuggingFace or Hugston.com)
-- **AI-powered diagnostics** for X-rays, MRI, drawings, 3D modeling, etc. (via Image-to-Text)
-- **Multitasking like a browser/app**, now equipped with AI—no subscription or worry about costs
-
-
-
 ---
 
 # **Our Strongest Points:**
 
 
 - **We don’t collect user data**
-- **No forced updates** included in the app
+- **No forced updates or better said no updates at all in the app** Unless downloading and installing a new version manually
 - **No telemetry**
-- **No HTTP involved** (load with local CLI)
+- **No HTTP involved in CLI **
 - **1 click Install (Windows)**
 - **No internet required** unless explicitly chosen by the user
 - **No API key required**
-- **Supports long lines of code Input/Output (50000+ tokens tested/tab)**
-- **No refusal** Using the right LLM model (potential for 200,000+ code lines, divided into 1000-5000-20000 lines at once)
-- **Completely free**
+- **Supports long lines of code Input/Output**
+- **No refusals/restrictions** Using the right LLM model
+- **Completely free the community version in github**
 
 ---
 
 ### **Getting Started**
 First-time users need to request the activation code via email to:
 - **HugstonOne@Hugston.com**
-*(Check spam if the email is delayed, as we are a new service.)*
-Requirements: Visual c++ (Or Visual studio with c++). 
-
-
-<img width="1820" height="958" alt="Screenshot 2025-06-25 132746" src="https://github.com/user-attachments/assets/dea7454d-9cd8-4f72-bcac-57ec60027a2d" />
 
 🔗 **Download the App:** [Hugston Website](https://Hugston.com)
 
 **Enjoy!**
 
-Some examples: 
-Of the previous versions
 
-https://github.com/user-attachments/assets/89a094ec-48cd-45ad-8743-c9427f43abc9
-
-https://github.com/user-attachments/assets/7240700e-9f37-4001-b5f8-f156ec7716c4
-
-
-<img width="1823" height="977" alt="Screenshot 2025-07-16 133301" src="https://github.com/user-attachments/assets/ce430f46-93f4-4bc8-bbfc-031cf15cc4bb" />
-<img width="1823" height="978" alt="Screenshot 2025-07-11 181652 png" src="https://github.com/user-attachments/assets/4a47c740-7a77-4c51-8529-987a3607ed78" />
-<img width="1657" height="975" alt="Screenshot 2025-07-11 181324 png" src="https://github.com/user-attachments/assets/a442296a-4279-43f7-8458-53991b9f1558" />
-<img width="1655" height="975" alt="Screenshot 2025-07-11 181253 png" src="https://github.com/user-attachments/assets/03d14535-9342-49b4-baef-bd09f24fde55" />
-<img width="1823" height="976" alt="Screenshot 2025-07-01 114036 png" src="https://github.com/user-attachments/assets/d0cd1c43-b331-4b9b-91b5-d929ca80d1fd" />
-<img width="1823" height="977" alt="Screenshot 2025-07-01 103250 png" src="https://github.com/user-attachments/assets/c31e2c37-49c6-4ada-963b-86ad4870299e" />
-<img width="1823" height="972" alt="Screenshot 2025-06-29 235430 png" src="https://github.com/user-attachments/assets/0639fb14-1f17-411a-b425-a9cd46a2924e" />
-<img width="1823" height="973" alt="Screenshot 2025-06-26 141843 png" src="https://github.com/user-attachments/assets/99719c47-5c9a-4c8c-a5d7-f790a45b01fb" />
-<img width="1823" height="977" alt="Screenshot 2025-06-25 215936 png" src="https://github.com/user-attachments/assets/b2f6ee1d-6219-426e-8da6-657feb09943d" />
-
-
-## **Future goals:** 
-- 1 To make it more accessible to users
-- 2 Connecting to Hugston Repository for curated models
-- 3 Adding chat between HugstonOne Users for real time talk
-- 4 Integrating better memory options
-- 5 Build for Linux, MacOs, Mobile Platforms. 
+ 
 
 
 ## **Credits**
