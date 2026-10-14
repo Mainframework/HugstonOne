@@ -9,7 +9,17 @@ The upgraded version only available at:   [Hugston Website](https://Hugston.com)
 
 ---
 
-<img width="2542" height="1081" alt="05_coding_mode" src="https://github.com/user-attachments/assets/624acbb2-59c4-4949-9075-3ae0708a559a" />
+
+
+https://github.com/user-attachments/assets/eb4000a8-662e-47e8-803f-d74493972553
+
+
+
+https://github.com/user-attachments/assets/4519bcf2-a8af-4a44-b8ba-1c7672520f03
+
+
+
+
 
 ---
 
